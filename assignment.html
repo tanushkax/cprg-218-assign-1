@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+      }
+
+      .card:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      .card:last-child {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .card {
+        width: calc(33.33% - 10px);
+        margin-right: 20px;
+      }
+
+      .card:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="pictures/bear.jpg" alt="bear">
+      <div class="card-content">
+        <h2>Bear</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi numquam cupiditate ut cum. Nihil nulla nam eligendi dolore, animi dicta, maxime sunt accusamus quaerat vel esse hic, maiores quia velit.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/crane.jpg" alt="crane">
+      <div class="card-content">
+        <h2>Crane</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis reprehenderit minima perferendis asperiores a ut accusamus, qui, obcaecati in delectus cupiditate provident nam debitis laboriosam tempora exercitationem! Eos, dolorum!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/frog.jpg" alt="frog">
+      <div class="card-content">
+        <h2>Frog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro laudantium repellat ratione soluta, incidunt fugiat quisquam perferendis distinctio consequuntur earum culpa magnam inventore in explicabo animi harum veniam libero sapiente..</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/giraffe.jpg" alt="giraffee">
+      <div class="card-content">
+        <h2>Giraffee</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed a, voluptates ipsa et maiores ex accusantium. Doloribus voluptas quisquam, quibusdam labore corrupti ratione eos, quasi quo autem, magnam placeat.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/lizard.jpg" alt="lizard">
+      <div class="card-content">
+        <h2>Lizard</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum incidunt libero harum, tempore autem nesciunt et velit aliquid maxime ullam ipsa nobis quis quae fugiat consectetur quod eum praesentium sint.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/monkey.jpg" alt="monkey">
+      <div class="card-content">
+        <h2>Monkey</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae pariatur officia atque beatae veritatis laboriosam sit tempore, perferendis earum voluptatem laborum porro dicta aspernatur explicabo facere dolores ullam nesciunt! Dolorem!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/panda.jpg" alt="panda">
+      <div class="card-content">
+        <h2>Panda</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi ipsam quas eaque odit quia? Cumque iusto culpa consequatur possimus dolores vitae asperiores doloribus officiis, perspiciatis dicta vel in autem.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pictures/puffin.jpg" alt="puffin">
+      <div class="card-content">
+        <h2>Puffin</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam cumque accusantium similique fugiat non, alias, quo impedit adipisci, illo officia blanditiis quaerat praesentium maiores. Animi id nobis sunt accusantium?</p>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <img src="pictures/tiger.jpg" alt="tiger">
+      <div class="card-content">
+        <h2>Tiger</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi ipsam quas eaque odit quia? Cumque iusto culpa consequatur possimus dolores vitae asperiores doloribus officiis, perspiciatis dicta vel in autem.</p>
+      </div>
+
+  </div>
+
+</body>
+</html>
